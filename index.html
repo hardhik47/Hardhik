@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>Hardhik A</title>
+</head>
+<body>
+	<div class="toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<a href="#">Home</a>
+				<a href="#about">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="head-content">
+			<img src="images/hardhik.jpg" height="300px" width="300px">
+			<video autoplay muted loop class="vid">
+				<source src="917-141887976_small.mp4" type="video/mp4">
+			</video>
+			<p class="name">Hardhik A</A></p>
+			<p class="desc">Frontend Web Developer</p>
+		</div>
+		</div>
+		<div class="about-section" id="about">
+			<h2>About Me</h2>
+			<p> Hello! I’m Hardhik, an 18-year-old web enthusiast and avid gamer pursuing a BTech in Computer Science Engineering. My passion for technology is matched only by my love for gaming. I specialize in creating sleek, responsive websites with HTML, CSS, and JavaScript, ensuring a seamless user experience. As a developer, I’m dedicated to learning and growing with each line of code I write. When I’m not busy debugging or deploying, you’ll find me exploring new gaming worlds, always eager to conquer the next challenge. Welcome to my portfolio, where each project is a level up in my coding journey!</p>
+	</div>
+	<br>
+	<style>
+        table,th,td{
+            border:3px solid black;
+            color:black;
+            margin-top: 100px;
+        }
+        th,td{
+            padding-left: 150px;
+            padding-top: 3px;
+            padding-bottom: 20px;
+            padding-right: 30px;
+        }
+    </style>
+    <p> 
+        <table style="width:100%">
+            <tr>
+                <th>S.no</th>
+                <th>Previous Education</th>
+				<th>Scores</th>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">1</td>
+                <td class="td1" rel="stylesheet" href="Style.css">Amrita Vishwa Vidyapeetham Chennai Campus</td>
+                <td rel="stylesheet" href="Style.css">Current GPA 6.4</td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2">2</td>
+                <td rel="stylesheet" href="Style.css">rbgs</td>
+                <td rel="stylesheet" href="Style.css">Percentage:89%</td>
+            </tr>
+            <tr class="tr3">
+                <td class="td3">3</td>
+                <td rel="stylesheet" href="Style.css">wgs </td>
+                <td rel="stylesheet" href="Style.css">Percentage:75%</td>
+            </tr>
+        </table>
+	<div class="skills-section" id="skills">
+		<h2>Skills</h2>
+		<img src="images/html.png">
+		<img src="images/css.png">
+		<img src="images/js.png">
+	</div>
+	<div class="contact-section" id="contact">
+		<span>Contact</span>
+		<input type="text" class="inp-name" placeholder="Name">
+		<input type="text" class="inp-mail" placeholder="Your Email">
+		<textarea rows="10" cols="40" placeholder="Your Message" class="inp-msg"></textarea>
+		<input type="button" class="inp-btn" value="Submit">
+	</div>
+	<div class="copyright">
+		<p>Hardhik &copy; 2020</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".toggle").click(function(){
+			$(".navbar").slideToggle()
+		});
+	});
+
+	$(window).resize(function(){
+		if($(window).width()>768)
+		{
+			$('.navbar').show();
+		}
+		else
+		{
+			$('.navbar').hide();
+		}
+	});
+</script>
+</html>
